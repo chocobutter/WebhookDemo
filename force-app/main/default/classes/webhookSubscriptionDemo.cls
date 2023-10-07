@@ -11,4 +11,5 @@ global with sharing class webhookSubscriptionDemo{
         }
     }
     //test
+    System.debug('test');
 }
