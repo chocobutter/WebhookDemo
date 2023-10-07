@@ -1,0 +1,12 @@
+<template>
+    <div class={messageStyle}>
+        <template if:true={showWordCloud}>
+            <c-recent-records object-name={objectName} num-records={numRecords}></c-recent-records>
+        </template>
+        <template if:false={showWordCloud}>
+            <lightning-formatted-rich-text
+                value={messageContent.value}>
+            </lightning-formatted-rich-text>
+        </template>
+    </div>
+</template>

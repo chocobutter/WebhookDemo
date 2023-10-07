@@ -1,0 +1,22 @@
+<template>
+    <template if:true={showNoContent}>
+        <lightning-formatted-rich-text value={text}></lightning-formatted-rich-text>
+    </template>
+
+    <!-- date picker -->
+    <template if:true={showDatePicker}>
+        <lightning-input type="date" name="date" class="date" label="Date" value={date} onchange={handleDateChange} required ></lightning-input>
+    </template>
+    <template if:false={showDatePicker}>
+        <lightning-formatted-rich-text value={content}></lightning-formatted-rich-text>
+    </template>
+
+    <!-- time picker -->
+    <template if:true={showTimePicker}>
+        <lightning-input type="time" name="time" class="time" label="Time" value={time} onchange={handleTimeChange} required ></lightning-input>
+    </template>
+
+    <template if:false={showTimePicker}>
+        <lightning-formatted-rich-text value={content}></lightning-formatted-rich-text>
+    </template>
+</template>

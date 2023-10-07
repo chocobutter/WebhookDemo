@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Opportunity List">
+        <lightning-datatable data={opportunities}
+                             columns={columns}
+                             key-field="Id"
+                             sorted-by={sortBy}
+                             sorted-direction={sortDirection}
+                             onsort={handleSortAccountData}
+                             hide-checkbox-column="true"
+                             ></lightning-datatable>
+    </lightning-card>
+</template>

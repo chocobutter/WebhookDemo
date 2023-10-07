@@ -1,0 +1,17 @@
+<template>
+    <lightning-button variant="brand" label="Normal Modal" name="showModalOne"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button>
+    <lightning-button variant="brand" label="Normal Modal2" name="showModalTwo"
+    onclick={handleClick} class="slds-var-m-left_x-small"></lightning-button>
+
+    <template if:true={showModalOne}>
+        <c-lightning-modal
+        title={MODAL_DATA.MODAL_ONE.heading}
+        body={MODAL_DATA.MODAL_ONE.body}></c-lightning-modal>
+    </template>
+
+    <template if:true={showModalTwo}>
+        <c-lightning-modal
+        body={MODAL_DATA.MODAL_THREE.heading}></c-lightning-modal>
+    </template>
+</template>

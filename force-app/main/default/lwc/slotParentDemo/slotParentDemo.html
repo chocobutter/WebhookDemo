@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Slot Demos">
+        <div class="slds-p-around_medium">
+            <c-slot-child-demo>
+                <p class="slds-text-color_success" slot="first">My Name is Demi</p>
+                <p class="slds-text-color_error" slot="second">My age is 18</p>
+                <p slot ="footer">I am footer</p>
+            </c-slot-child-demo>
+            <c-slot-child-demo>
+                <p class="slds-text-color_success" slot="first">My Name is Demi</p>
+                <p class="slds-text-color_error" slot="second">My age is 18</p>
+            </c-slot-child-demo>
+        </div>
+    </lightning-card>
+</template>
